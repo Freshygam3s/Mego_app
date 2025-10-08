@@ -18,7 +18,6 @@ body {
 }
 .container{
   flex: 1;
-  overflow: auto;
 }
 
 h1{
@@ -48,19 +47,11 @@ a{
   border-radius: 5px;
 }
 
-i{
-  cursor: pointer;
-  padding: 5px;
-  margin: auto 10px;
-  color: #333;
-  display: none !important;
-}
-
 .nav-bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 10%;
   width: 100%;
   position: sticky;
   top: 0; 
@@ -171,26 +162,112 @@ button:hover{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+
+#job-card{
+  width: 100%;
+  background-color: rgb(62, 62, 166);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#job-card button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  margin: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+label{
+  color: white;
+}
+
+input, select{
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
-  i {
-    display: inline-block !important;
-  }
   .menu-itm{
     display: none;
   }
   #right-section{
     margin-right: 5vw;
   }
+  .ham-menu{
+    display: block !important;
+  }
 }
 
-#left-section{
-  border: 2px solid blue;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin-left: 5vw;
-  box-shadow: 0 0px 10px rgba(0, 0, 255, 0.6);
+.off-screen-menu {
+    background-color: rgb(62, 62, 166);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active {
+    right: 0;
 }
 
-.footer{
-  text-align: center;
+.ham-menu {
+    display: none;
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    z-index: 7;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(62, 62, 166);
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: black;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+li,li a{
+  font-size: 0.9rem;
+  color: white;
+  padding: 10px;
 }
