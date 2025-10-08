@@ -12,6 +12,14 @@
   --main-color: #FBBB1D;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  flex: 1;
+}
+
 h1{
   color: var(--main-color);
   padding: 5px;
@@ -52,8 +60,23 @@ i{
   align-items: center;
   justify-content: space-between;
   height: 10%;
+  width: 100%;
   position: sticky;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: white; 
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background-color: #FBBB1D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
