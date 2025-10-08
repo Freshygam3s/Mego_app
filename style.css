@@ -51,13 +51,18 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10%;
+  height: 80px;
   width: 100%;
   position: sticky;
   top: 0; 
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 10px rgba(0, 0, 255, 0.3);
   background-color: white;
   z-index: 5; 
+}
+.nav-bar #mego-name:hover{
+  cursor: pointer;
+  transition: all 1s;
+  transform: scale(1.1); 
 }
 
 footer{
@@ -270,4 +275,12 @@ li,li a{
   font-size: 0.9rem;
   color: white;
   padding: 10px;
+}
+
+#left-section{
+  border: 2px solid blue;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 5vw;
+  box-shadow: 0 0px 10px rgba(0, 0, 255, 0.6);
 }
