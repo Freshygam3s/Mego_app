@@ -18,6 +18,7 @@ body {
 }
 .container{
   flex: 1;
+  overflow: auto;
 }
 
 h1{
@@ -59,7 +60,7 @@ i{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10%;
+  height: 80px;
   width: 100%;
   position: sticky;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
@@ -89,4 +90,16 @@ footer{
   #right-section{
     margin-right: 5vw;
   }
+}
+
+#left-section{
+  border: 2px solid blue;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 5vw;
+  box-shadow: 0 0px 10px rgba(0, 0, 255, 0.6);
+}
+
+.footer{
+  text-align: center;
 }
