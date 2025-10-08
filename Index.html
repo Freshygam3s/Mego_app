@@ -8,19 +8,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="#sales">Akcijas un piedāvājumi</a></li>
+      <li><a href="#darbs">Darbs</a></li>
+      <li><a href="#card-header">Mego karte</a></li>
+    </ul>
+  </div>
   <nav class="nav-bar">
     <div id="left-section">
       <a href="index.html"><h1>Mego</h1></a>
     </div>
     <div id="right-section">
-      <a href="#akcijas" class="menu-itm">Akcijas un piedāvājumi</a>
+      <a href="#sales" class="menu-itm">Akcijas un piedāvājumi</a>
       <a href="#darbs" class="menu-itm">Darbs</a>
-      <a href="#mego-karte" class="menu-itm">Mego karte</a>
-      <i class="fa-solid fa-bars"></i>
+      <a href="#card-header" class="menu-itm">Mego karte</a>
+      <div class="ham-menu">
+        <span><a href="#sales" class="menu-itm">Akcijas un piedāvājumi</a></span>
+        <span><a href="#darbs" class="menu-itm">Darbs</a></span>
+        <span><a href="#card-header" class="menu-itm">Mego karte</a></span>
+      </div>
     </div>
   </nav>
   <div class="container">
-    <h2 class="section-header">Akcijas un piedāvājumi</h2>
+    <h2 class="section-header" id="sales">Akcijas un piedāvājumi</h2>
     <div id="akcijas">
       <div class="produkts">
         <img alt="produkts" src="images/Maize.jfif">
@@ -115,13 +126,13 @@
         <br>
         <label for="extra-info">Motivācijas vēstule</label>
         <br>
-        <textarea name="extra-info"></textarea>
+        <textarea name="extra-info" rows="10"></textarea>
         <button type="submit">Iesniegt</button>
       </div>
     </div>
   </div>
   <footer>
-    <address class="footer">
+    <address>
       <p>E-pasts: <a href="mailto:mego@mego.lv">mego@mego.lv</a></p>
       <p>Tel: +371 6677 5959</p>
       <p>Mego birojs: Krustpils iela 12, Latvija, Rīga, LV-1073</p>
@@ -129,5 +140,6 @@
     </address>
     <p class="copyright">SIA LENOKA. Visas tiesības aizsargātas</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
