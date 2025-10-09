@@ -120,8 +120,10 @@ footer{
   text-decoration: line-through;
 }
 
-produkts img{
+.produkts img{
+  max-height: 150px;
   max-width: 200px;
+  width: 150px;
   overflow: hidden;
 }
 
@@ -278,7 +280,7 @@ li,li a{
 }
 
 #left-section{
-  border: 2px solid blue;
+  border: 2px solid rgb(62, 62, 166);
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   margin-left: 5vw;
